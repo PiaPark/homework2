@@ -9,6 +9,7 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.10.0",
+    "node-sass": "^4.13.1",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -18,8 +19,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "eslint": "eslint './src/**/*.{js,jsx}'"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -27,10 +27,13 @@
       "airbnb",
       "prettier"
     ],
-    "parser": "babel-eslint",
     "rules": {
+      "react/prefer-stateless-function": 0,
       "react/jsx-filename-extension": 0,
       "react/jsx-one-expression-per-line": 0
+    },
+    "env": {
+      "browser": true
     }
   },
   "browserslist": {
